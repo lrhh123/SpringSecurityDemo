@@ -1,0 +1,22 @@
+server:
+  port: 9002
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///security_authority?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.robod.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com: debug
+
+rsa:
+  key:
+    pubKeyPath: C:\Users\robod\Desktop\auth_key\id_key_rsa.pub
